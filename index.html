@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Accipiter Pictures</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Accipiter Pictures is the film label of Hunter Hawke, a New York City writer, director, producer and sound professional. Hunter Hawke Sound offers location sound, post-sound and kit rental.">
+<!-- Link previews (iMessage, Instagram, Slack, etc.) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Accipiter Pictures">
+<meta property="og:url" content="https://accipiterpictures.com/">
+<meta property="og:title" content="Accipiter Pictures">
+<meta property="og:description" content="Films by Hunter Hawke, writer, director and producer. Hunter Hawke Sound: location sound, post-sound and kit rental. NYC and Beyond.">
+<meta property="og:image" content="https://accipiterpictures.com/assets/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Accipiter Pictures logo with Hunter Hawke signature">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico?v=4" sizes="any">
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=4">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=3">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Brand fonts. Big Shoulders Display + Jost are free on Google Fonts. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;1,400;1,600&display=swap">
+<!-- Baka Too (Positype), self-hosted under Hunter's Fontspring web license; see css/site.css -->
+<link rel="preload" href="assets/fonts/bakatoo-webfont.woff2" as="font" type="font/woff2" crossorigin>
+<!-- First visit from outside the site (once per browser session): play the intro in js/site.js.
+     Set before first paint so the page never flashes. -->
+<script>
+(function () {
+  var seen = false, internal = false;
+  try {
+    var ref = document.referrer && new URL(document.referrer);
+    /* the /sound/ and /about/ short links (where other domains forward) count as arriving from outside */
+    internal = !!ref && ref.host === location.host && !/\/(sound|about|gear)\/?$/.test(ref.pathname);
+  } catch (e) {}
+  try { seen = !!sessionStorage.getItem('ap-intro'); sessionStorage.setItem('ap-intro', '1'); } catch (e) {}
+  var forced = /[?&]intro\b/.test(location.search);   /* add ?intro to the address to replay it */
+  if (forced || (!internal && !seen && !matchMedia('(prefers-reduced-motion: reduce)').matches))
+    document.documentElement.classList.add('splash-on');
+})();
+</script>
+<link rel="stylesheet" href="css/site.css?v=53ae52b4">
+</head>
+<body>
+
+<!-- Intro: the bird arrives, winks, then settles into the logo -->
+<div class="splash" aria-hidden="true">
+  <div class="splash-bird"><div class="splash-rig">
+    <img src="assets/intro/hood.png?v=447dbe" alt="" width="423" height="243">
+    <div class="splash-head">
+      <img src="assets/intro/head.png?v=447dbe" alt="" width="423" height="243">
+      <img class="splash-eye" src="assets/intro/eye.png?v=447dbe" alt="" width="423" height="243">
+    </div>
+  </div></div>
+</div>
+
+<header class="nav rule-bottom">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="Accipiter Pictures, back to top"><img src="assets/ap-mark.png" alt="Accipiter Pictures" width="816" height="440"></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#films">Films</a></li>
+        <li><a href="#sound">Sound</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="rec"><span class="on"><span class="dot" aria-hidden="true"></span>Rec</span><span class="tc" id="tc" aria-hidden="true">00:00:00:00</span><span>NYC and Beyond</span></p>
+      <div class="hero-center">
+      <h1><img class="hero-mark" fetchpriority="high" src="assets/ap-horizontal-main.png" alt="Accipiter Pictures" width="1276" height="204"></h1>
+      <div class="hero-sub">
+        <span class="label">Films by</span>
+        <span class="hand"><span class="ch" role="img" aria-label="H"></span>unter Hawke</span>
+      </div>
+      <div class="hero-roles caps">
+        <span>Writer / Director</span>
+        <span>Producer</span>
+        <span>Sound Professional</span>
+      </div>
+      <div class="cta">
+        <a class="btn btn-solid" href="#films"><span class="play" aria-hidden="true"></span>Watch the films</a>
+        <a class="btn btn-line" href="#sound"><span class="dot" aria-hidden="true"></span>Book sound</a>
+      </div>
+      </div>
+      <div class="wave" aria-hidden="true" data-bars="120"></div>
+    </div>
+  </section>
+
+  <!-- ===== THE NAME ===== -->
+  <section class="block" id="name">
+    <div class="wrap">
+      <div class="name">
+        <div class="entry" tabindex="0">
+          <div class="face def">
+            <div class="term"><span class="word display">Ac·cip·i·ter</span><span class="pron">/ak-SIP-ih-ter/ <i>noun · Latin, “hawk”</i></span></div>
+            <p class="rule-left">A genus of hawks built for the hunt: short wings, sharp eyes. Moves quick in close quarters.</p>
+          </div>
+          <div class="face alt" aria-label="An Accipiter is a Hunter Hawke">
+            <span class="lid" aria-hidden="true"><img src="assets/ap-mark.png" alt="" width="816" height="440"></span>
+            <span class="hand" aria-hidden="true">An Accipiter is&nbsp;a&nbsp;<img class="hh-word" src="assets/hunter-hawke-wordmark.png" alt="" width="774" height="188"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FILMS ===== -->
+  <section class="block" id="films">
+    <div class="wrap">
+      <div class="head">
+        <h2 class="hand pictures">The Pictures</h2>
+      </div>
+      <p class="intro">Original films at the intersection of vulnerability, wit and craft.</p>
+
+      <!-- Each film carries its own colors, like the brand's title cards:
+           --fbg = light color, --fink = dark color, --fhi = title color on hover.
+           Big Slop Sap and Lemon Fresh use the brand book's colors; the rest default to black and white until picked.
+           TODO: set each href to its Vimeo/YouTube link and fill in role + year. -->
+      <div class="films">
+        <article class="film" style="--fhi:#e5483a">
+          <a href="https://vimeo.com/1055764935/4d7d18f487" target="_blank" rel="noopener" aria-label="Watch Big Slop Sap"><div class="tile"><img src="assets/stills/big-slop-sap.webp?v=3" alt="Still from Big Slop Sap" width="1600" height="900" loading="lazy"></div>
+          <div class="film-meta"><span class="film-title">Big Slop Sap</span><span class="film-sub rule-top"><span class="caps">Writer/Director</span><span class="year">2025</span></span></div></a>
+        </article>
+        <article class="film" style="--fhi:#e8834f">
+          <a href="https://vimeo.com/973535166/12983e5b32" target="_blank" rel="noopener" aria-label="Watch intimacy."><div class="tile"><img src="assets/stills/intimacy.webp?v=2" alt="Still from intimacy." width="1600" height="900" loading="lazy"></div>
+          <div class="film-meta"><span class="film-title">intimacy.</span><span class="film-sub rule-top"><span class="caps">Writer/Director</span><span class="year">2024</span></span></div></a>
+        </article>
+        <article class="film" style="--fhi:#6ea3cf">
+          <a href="https://www.youtube.com/watch?v=PYgFz4vdVSE" target="_blank" rel="noopener" aria-label="Watch Private Message"><div class="tile"><img src="assets/stills/private-message.webp" alt="Still from Private Message" width="1280" height="720" loading="lazy"></div>
+          <div class="film-meta"><span class="film-title">Private Message</span><span class="film-sub rule-top"><span class="caps">Writer/Director</span><span class="year">2021</span></span></div></a>
+        </article>
+        <article class="film" style="--fhi:#f2cf63">
+          <a href="https://vimeo.com/304978461" target="_blank" rel="noopener" aria-label="Watch Lemon Fresh"><div class="tile"><img src="assets/stills/lemon-fresh.webp" alt="Still from Lemon Fresh" width="1280" height="720" loading="lazy"></div>
+          <div class="film-meta"><span class="film-title">Lemon Fresh</span><span class="film-sub rule-top"><span class="caps">Writer/Director</span><span class="year">2018</span></span></div></a>
+        </article>
+        <article class="film" style="--fhi:#a9a9a9">
+          <a href="https://vimeo.com/467856478" target="_blank" rel="noopener" aria-label="Watch KEN?"><div class="tile"><img src="assets/stills/ken.webp" alt="Still from KEN?" width="1280" height="720" loading="lazy"></div>
+          <div class="film-meta"><span class="film-title"><em>KEN?</em></span><span class="film-sub rule-top"><span class="caps">Writer/Director</span><span class="year">2020</span></span></div></a>
+        </article>
+        <article class="film" style="--fhi:#ec9aa4">
+          <a href="https://www.youtube.com/watch?v=iqhedGzMvAc" target="_blank" rel="noopener" aria-label="Watch Ode to Cats"><div class="tile ink"><img src="assets/stills/ode-to-cats.webp" alt="Still from Ode to Cats" width="1280" height="720" loading="lazy"></div>
+          <div class="film-meta"><span class="film-title">Ode to Cats</span><span class="film-sub rule-top"><span class="caps">Writer/Director · Teaser</span><span class="year">2021</span></span></div></a>
+        </article>
+        <article class="film" style="--fhi:#d4553e">
+          <a href="https://www.youtube.com/watch?v=RqrV6_0_j_s" target="_blank" rel="noopener" aria-label="Watch Just Noise"><div class="tile"><img src="assets/stills/just-noise.webp" alt="Still from Just Noise" width="1280" height="720" loading="lazy"></div>
+          <div class="film-meta"><span class="film-title">Just Noise</span><span class="film-sub rule-top"><span class="caps">Writer/Director</span><span class="year">2018</span></span></div></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOUND ===== -->
+  <section class="block rule-top" id="sound">
+    <div class="wrap">
+      <div class="sound-head">
+        <img src="assets/hh-stacked-woodcut.png" alt="Hunter Hawke Sound" width="1150" height="708" loading="lazy">
+        <div>
+          <p class="sound-rec"><span class="dot" aria-hidden="true"></span>Rolling</p>
+          <p class="hand">Clean sound, the first time, every time!</p>
+          <div class="wave small" aria-hidden="true" data-bars="72"></div>
+        </div>
+      </div>
+
+      <p class="sound-intro">It takes a lot of forethought for sound to feel like an afterthought and still sound this good.</p>
+
+      <div class="services rule-top-bright">
+        <div class="svc"><h3>Production sound</h3><p>Rock-solid reliable gear, 12 simultaneous lavaliers in-house. The sky is the limit on your creative!</p></div>
+        <div class="svc"><h3>Post-sound</h3><p>Buttery smooth dialogue edit and a perfectly dialed-in mix.</p></div>
+        <div class="svc"><h3>Kit rental</h3><p>Set-tested gear, charged and ready to roll. Take it solo or bring me along.</p><a class="more caps rule-bottom" href="kit/">See the kit <span aria-hidden="true">→</span></a></div>
+      </div>
+      <div class="sound-cta">
+        <a class="btn btn-solid" href="mailto:hunter@accipiterpictures.com?subject=Sound%20booking"><span class="dot" aria-hidden="true"></span>Book Hunter Hawke Sound</a>
+        <span class="hand">Leave it to me — I’ve got you covered.</span>
+      </div>
+
+      <div class="sub" id="clients">
+        <span class="label">Past Clients</span>
+        <div class="clients row-grid">
+          <div class="client"><img src="assets/clients/maybelline.webp" alt="Maybelline New York" width="1241" height="132" style="--h:28px" loading="lazy"></div>
+          <div class="client"><img src="assets/clients/oribe.webp" alt="Oribe" width="418" height="132" style="--h:38px" loading="lazy"></div>
+          <div class="client"><img src="assets/clients/govee.webp" alt="Govee" width="492" height="132" style="--h:40px" loading="lazy"></div>
+          <div class="client"><img src="assets/clients/golden-hippo.webp" alt="Golden Hippo" width="464" height="132" style="--h:56px" loading="lazy"></div>
+          <div class="client"><img src="assets/clients/stickerbox.webp" alt="Stickerbox" width="766" height="132" style="--h:32px" loading="lazy"></div>
+          <div class="client"><img src="assets/clients/sabah.webp" alt="Sabah" width="386" height="132" style="--h:50px" loading="lazy"></div>
+          <div class="client"><img src="assets/clients/oh-new-york.webp" alt="Oh New York" width="169" height="132" style="--h:58px" loading="lazy"></div>
+          <div class="client"><img src="assets/clients/baton.webp" alt="Baton" width="443" height="132" style="--h:44px" loading="lazy"></div>
+          <div class="client"><img src="assets/clients/milkxp.webp" alt="milkXP" width="334" height="132" style="--h:52px" loading="lazy"></div>
+          <div class="client"><img src="assets/clients/easy-mondays.webp" alt="Easy Mondays" width="298" height="132" style="--h:50px" loading="lazy"></div>
+          <div class="client"><img src="assets/clients/cody-lassen.webp" alt="Cody Lassen &amp; Associates" width="254" height="132" style="--h:62px" loading="lazy"></div>
+          <div class="client"><img src="assets/clients/sure-win.webp" alt="Sure Win Productions" width="526" height="132" style="--h:42px" loading="lazy"></div>
+          <div class="client"><img src="assets/clients/doing-things.webp" alt="Doing Things" width="307" height="132" style="--h:50px" loading="lazy"></div>
+          <div class="client"><img src="assets/clients/lame.webp" alt="LAME." width="709" height="132" style="--h:28px" loading="lazy"></div>
+        </div>
+      </div>
+
+      <div class="sub">
+        <span class="label">Behind the scenes</span>
+        <div class="bts">
+          <figure class="photo" tabindex="0"><img src="assets/photos/bts-studio.webp" alt="Hunter in a studio with a sound bag and boom pole, throwing a peace sign under a softbox" width="900" height="1200" loading="lazy"><figcaption class="cap"><em>Happy Enough</em><span class="sep" aria-hidden="true">|</span>Short Film</figcaption></figure>
+          <figure class="photo" tabindex="0"><img src="assets/photos/bts-backyard.webp" alt="Hunter on an outdoor set in headphones, holding a boom with a recorder clipped to the pole" width="900" height="1200" loading="lazy"><figcaption class="cap"><em>Between the Veil</em><span class="sep" aria-hidden="true">|</span>Short Film</figcaption></figure>
+          <figure class="photo" tabindex="0"><img src="assets/photos/bts-orange-room.webp" alt="Hunter smiling with a boom pole in an orange-lit set, a crew member at the sound cart behind him" width="900" height="1200" loading="lazy"><figcaption class="cap"><em>Old Soul</em><span class="sep" aria-hidden="true">|</span>Feature Film</figcaption></figure>
+          <figure class="photo wide framed" tabindex="0"><img src="assets/photos/bts-lav.webp" alt="Hunter preparing a lavalier mic and transmitter for an actor" width="1600" height="932" loading="lazy"><figcaption class="cap"><em>The Call</em><span class="sep" aria-hidden="true">|</span>Short Film</figcaption></figure>
+          <figure class="photo fill" tabindex="0"><img src="assets/photos/bts-screening.webp?v=2" alt="Hunter laughing beside a projection screen at a screening" width="1000" height="1000" loading="lazy"><figcaption class="cap"><em>intimacy.</em><span class="sep" aria-hidden="true">|</span>Hosted at DarkRoom</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="sub" id="sound-work">
+        <span class="label">Selected Sound Work</span>
+        <!-- TODO: confirm Hunter's credit on each; add links if there are trailers -->
+        <div class="posters row-grid">
+          <figure class="poster"><div class="art"><img src="assets/posters/company-of-thieves.webp" alt="Poster for A Company of Thieves" width="700" height="1050" loading="lazy"></div><figcaption><span class="t">A Company of Thieves</span><span class="meta rule-top"><span class="caps">Production Sound</span><span class="year">2026</span></span></figcaption></figure>
+          <figure class="poster"><div class="art"><img src="assets/posters/what-cant-be-mentioned.webp" alt="Poster for What Can’t Be Mentioned" width="700" height="1050" loading="lazy"></div><figcaption><span class="t">What Can’t Be Mentioned</span><span class="meta rule-top"><span class="caps">Additional Sound Mixer</span><span class="year">2026</span></span></figcaption></figure>
+          <figure class="poster"><div class="art"><img src="assets/posters/cub.webp" alt="Poster for Cub" width="700" height="1050" loading="lazy"></div><figcaption><span class="t">Cub</span><span class="meta rule-top"><span class="caps">Production Sound</span><span class="year">2026</span></span></figcaption></figure>
+          <figure class="poster"><div class="art"><img src="assets/posters/brooklyn-coffee-shop.webp" alt="Title card for Brooklyn Coffee Shop" width="700" height="1050" loading="lazy"></div><figcaption><span class="t">Brooklyn Coffee Shop</span><span class="meta rule-top"><span class="caps">Production Sound</span><span class="year">2025</span></span></figcaption></figure>
+          <figure class="poster"><div class="art"><img src="assets/posters/actual-nobodies.webp" alt="Poster for Actual Nobodies" width="700" height="1037" loading="lazy"></div><figcaption><span class="t">Actual Nobodies</span><span class="meta rule-top"><span class="caps">Production Sound</span><span class="year">2027</span></span></figcaption></figure>
+          <figure class="poster"><div class="art"><img src="assets/posters/sao-paulo-new-york.webp" alt="Poster for São Paulo, New York" width="700" height="1050" loading="lazy"></div><figcaption><span class="t">São Paulo, New York</span><span class="meta rule-top"><span class="caps">Production Sound</span><span class="year">2026</span></span></figcaption></figure>
+          <figure class="poster"><div class="art"><img src="assets/posters/oh-happy-hour.webp" alt="Poster for Overheard Happy Hour" width="700" height="1050" loading="lazy"></div><figcaption><span class="t">Overheard Happy Hour</span><span class="meta rule-top"><span class="caps">Production Sound</span></span></figcaption></figure>
+          <figure class="poster"><div class="art"><img src="assets/posters/romance-et-misere.webp" alt="Poster for Romance et Misère" width="700" height="1050" loading="lazy"></div><figcaption><span class="t">Romance et Misère</span><span class="meta rule-top"><span class="caps">Production Sound &amp; Post Mix</span><span class="year">2026</span></span></figcaption></figure>
+          <figure class="poster"><div class="art"><img src="assets/posters/accent.webp" alt="Poster for Accent" width="700" height="1037" loading="lazy"></div><figcaption><span class="t">Accent</span><span class="meta rule-top"><span class="caps">Production Sound &amp; Dialogue Edit</span><span class="year">2026</span></span></figcaption></figure>
+          <figure class="poster"><div class="art"><img src="assets/posters/divine-intervention.webp" alt="Poster for Divine Intervention" width="700" height="1050" loading="lazy"></div><figcaption><span class="t">Divine Intervention</span><span class="meta rule-top"><span class="caps">Production Sound</span></span></figcaption></figure>
+          <figure class="poster"><div class="art"><img src="assets/posters/hot-and-single.webp" alt="Poster for Hot &amp; Single" width="700" height="1050" loading="lazy"></div><figcaption><span class="t">Hot &amp; Single</span><span class="meta rule-top"><span class="caps">Production Sound</span></span></figcaption></figure>
+          <figure class="poster"><div class="art"><img src="assets/posters/lost-dog.webp" alt="Poster for Lost Dog" width="700" height="1050" loading="lazy"></div><figcaption><span class="t">Lost Dog</span><span class="meta rule-top"><span class="caps">Production Sound</span><span class="year">2026</span></span></figcaption></figure>
+          <figure class="poster"><div class="art"><img src="assets/posters/cerulea.webp" alt="Poster for Cerulea" width="700" height="1050" loading="lazy"></div><figcaption><span class="t">Cerulea</span><span class="meta rule-top"><span class="caps">Production Sound</span><span class="year">2026</span></span></figcaption></figure>
+          <figure class="poster"><div class="art"><img src="assets/posters/lucy-schulman.webp?v=2" alt="Lucy Schulman, Tribeca Film Festival selection" width="700" height="1050" loading="lazy"></div><figcaption><span class="t">Lucy Schulman</span><span class="meta rule-top"><span class="caps">Additional Boom Operator</span><span class="year">2026</span></span></figcaption></figure>
+        </div>
+      </div>
+
+      <div class="sub">
+        <div class="sub-head"><span class="label">The Kit</span><a class="more caps rule-bottom" href="kit/">See the full kit <span aria-hidden="true">→</span></a></div>
+        <div class="gear rule-top-bright">
+          <div><h4>Recorders &amp; Mixers</h4><ul>
+            <li>Sound Devices 833 + SL-2</li>
+            <li>Sound Devices MixPre-10 II</li>
+            <li>Sound Devices MixPre-6</li>
+            <li>Zoom F8N Pro</li>
+          </ul></div>
+          <div><h4>Microphones</h4><ul>
+            <li>Schoeps Colette MK41 / CMC5 (×2)</li>
+            <li>Schoeps KMIT shotgun</li>
+            <li>DPA 4017B shotgun</li>
+            <li>DPA 4060 / 4061 lavaliers</li>
+            <li>Sanken COS-11D lavaliers</li>
+          </ul></div>
+          <div><h4>Wireless &amp; Timecode</h4><ul>
+            <li>Wisycom MCR54 &amp; MPR52 receivers</li>
+            <li>Wisycom MTP61 / MTP60 / MTP40S transmitters</li>
+            <li>Sennheiser G4 wireless</li>
+            <li>Sennheiser G4 Client Comms (×6)</li>
+            <li>Deity TC-1 timecode (×5) + TC-SL1 smart slates (×2)</li>
+          </ul></div>
+          <div><h4>Boom &amp; Field Kit</h4><ul>
+            <li>K-Tek KP16CCR graphite boom</li>
+            <li>VdB L-QT quarter-turn boom</li>
+            <li>Rycote &amp; Røde blimps, wind protection</li>
+            <li>K-Tek Stingray bags &amp; harness</li>
+            <li>Sennheiser HD 25 headphones</li>
+          </ul></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="block rule-top" id="about">
+    <div class="wrap">
+      <div class="head">
+        <h2 class="display">About</h2>
+        <span class="hand">The <span class="ch" role="img" aria-label="H"></span>unter Behind the Hawke</span>
+      </div>
+      <div class="about">
+        <div class="portrait">
+          <figure class="photo framed meet"><a href="https://www.instagram.com/hunterxhawke" target="_blank" rel="noopener" aria-label="Meet Hunter on Instagram"><img src="assets/photos/headshot.webp" alt="Hunter Hawke on a rooftop at dusk, holding a boom pole with headphones around his neck" width="1000" height="1250" loading="lazy"><span class="cap" aria-hidden="true"><span class="hand">Meet <span class="ch"></span>unter</span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.6" cy="6.4" r="1.3" fill="currentColor"/></svg></span></a></figure>
+          <p class="credit">photo by Eugene Mayo</p>
+        </div>
+        <div class="bio">
+          <p class="first">I listen for the story.</p>
+          <p>I’ve been creating and experimenting within film and music, my two favorite media, for over ten years. Since moving to NYC, staying active as a sound professional has deepened my understanding of both crafts.</p>
+          <p>Working up close with other creatives and technicians day in and day out has taught me to adapt to all kinds of working styles, so I can show up on any set and meet every production’s sound needs.</p>
+          <p>I also love writing, directing and producing when the right project comes along. In the hustle of it all, it’s important to keep our own creative worlds alive!</p>
+          <div class="sign"><img src="assets/icon-feather.png" alt="" width="120" height="127" loading="lazy"><span class="hand"><span class="ch" role="img" aria-label="H"></span>unter Hawke</span></div>
+        </div>
+      </div>
+
+      <div class="contact rule-top-bright">
+        <div>
+          <span class="label">Reach out for a sound booking or about anything you’re working on!</span>
+          <a class="email" id="email" href="mailto:hunter@accipiterpictures.com">hunter@<wbr>accipiterpictures.com</a>
+          <div class="row"><button class="btn btn-line" id="copy" type="button">Copy email</button></div>
+        </div>
+        <nav class="links" aria-label="Elsewhere">
+          <a class="rule-bottom" href="https://www.youtube.com/@AccipiterPictures" target="_blank" rel="noopener"><span class="lk"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.8 15.1V8.9L15.6 12z"/></svg>YouTube</span> <span aria-hidden="true">↗</span></a>
+          <a class="rule-bottom" href="https://vimeo.com/accipiterpictures" target="_blank" rel="noopener"><span class="lk"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23 7.1c-.1 2.1-1.6 5-4.4 8.6C15.7 19.5 13.3 21.4 11.3 21.4c-1.2 0-2.3-1.1-3.1-3.4L6.5 11.8C5.9 9.6 5.2 8.4 4.5 8.4c-.2 0-.7.3-1.6 1L2 8.2l2.9-2.6C6.2 4.5 7.2 3.9 7.9 3.8c1.5-.1 2.5.9 2.8 3.1.4 2.4.6 3.9.8 4.5.4 2 .9 2.9 1.4 2.9.4 0 1-.6 1.9-1.9.8-1.3 1.3-2.3 1.3-3 .1-1.1-.3-1.7-1.3-1.7-.5 0-.9.1-1.4.3.9-3 2.7-4.5 5.3-4.4 1.9.1 2.8 1.3 2.7 3.6z"/></svg>Vimeo</span> <span aria-hidden="true">↗</span></a>
+          <a class="rule-bottom" href="https://www.instagram.com/hunterxhawke" target="_blank" rel="noopener"><span class="lk"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.6" cy="6.4" r="1.3" fill="currentColor"/></svg>Instagram</span> <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rule-top">
+  <div class="wrap">
+    <a class="foot-mark" href="#top" aria-label="Back to top"><img src="assets/icon-hand-bird.png" alt="" width="565" height="600" loading="lazy"></a>
+    <p>© <span id="yr">2026</span> Accipiter Pictures · Hunter Hawke Sound · NYC and Beyond</p>
+  </div>
+</footer>
+
+<script src="js/site.js?v=9c574cab" defer></script>
+</body>
+</html>
